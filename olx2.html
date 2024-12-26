@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- <link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/O/olx-logo-20F1656D13-seeklogo.com.png"> -->
+    <link rel="icon" href="Photo/Main logo.png">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+
+        .breadcrumb {
+            margin: 8px 0;
+            font-size: 13px;
+            padding: 0;
+        }
+
+        .breadcrumb-item a {
+            color: #002f34;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #002f34;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #002f34;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .description a {
+            color: #3a77ff;
+            text-decoration: none;
+        }
+
+        .categories-section {
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            color: #002f34;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 16px;
+            border-bottom: 1px solid #ebeeef;
+            margin: 0;
+        }
+
+        .categories-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            /* Hidden by default */
+        }
+
+        .categories-list.show {
+            display: block;
+            /* Show when expanded */
+        }
+
+        .categories-list li {
+            padding: 12px 16px;
+            color: #002f34;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .categories-list li.active {
+            background: #e5f1f3;
+        }
+
+        .count {
+            color: #666;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .chevron {
+            border: solid #002f34;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-135deg);
+            transition: transform 0.2s ease;
+        }
+
+        .chevron.expanded {
+            transform: rotate(45deg);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .product-image {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .featured-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: #ffce32;
+            color: #002f34;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .favorite-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .product-info {
+            padding: 12px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #002f34;
+            margin-bottom: 4px;
+        }
+
+        .details {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #002f34;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .location-date {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .chevron {
+            border: solid #002f34;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-135deg);
+        }
+
+        .addEventListener {
+            /* width: 0; */
+            background: url(add.png);
+            background-size: cover;
+            height: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="heaDer">
+
+        <div class="myDiv2 bg-body-tertiary">
+            <div class="item_1">
+                <img src="Photo/logo olx.jpg" width="80px" height="50px">
+            </div>
+            <div class="item_2">
+                <select>
+                    <option value="india" selected>india</option>
+                </select>
+            </div>
+            <div class="item_3">
+                <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="input">
+                <input type="search" class="iCon">
+            </div>
+            <div class="item_4">
+                <a href="">Login</a>
+            </div>
+            <div class="item_5">
+                <a href="">+ SELL</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white borDer">
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand" href="#">
+                    <h6>ALL CATEGORIES <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Mobile Phone.html">Mobile Phones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="live-olx-project/cars.css">Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="live-olx-project/motorcycles.html">Motorcycles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="olx2.html">Scooters
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Commercial & Other Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV - Video - Audio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="container addEventListener">
+        <center><img  src="Photo/bg22.png" alt=""></center>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar mt-5">
+                <div class="categories-section">
+                    <div class="category-header" id="categoriesHeader">
+                        <h2 class="section-title m-0">CATEGORIES</h2>
+                        <span class="chevron"></span>
+                    </div>
+                    <ul class="categories-list" id="categoriesList">
+                        <li>Bikes</li>
+                        <li>Motorcycles <span class="count">(1,33,042)</span></li>
+                        <li class="active">Scooters <span class="count">(40,625)</span></li>
+                        <li>Spare Parts <span class="count">(7,686)</span></li>
+                        <li>Bicycles <span class="count">(23,110)</span></li>
+                    </ul>
+                </div>
+
+                <div class="categories-section">
+                    <div class="category-header">
+                        <h2 class="section-title m-0">LOCATIONS</h2>
+                        <span class="chevron"></span>
+                    </div>
+                    <ul class="categories-list">
+                        <li>Maharashtra <span class="count">(4,925)</span></li>
+                        <li>Uttar Pradesh <span class="count">(4,245)</span></li>
+                        <li>Kerala <span class="count">(3,773)</span></li>
+                        <li>Tamil Nadu <span class="count">(3,622)</span></li>
+                        <li>Karnataka <span class="count">(3,350)</span></li>
+                        <li>Telangana <span class="count">(3,210)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content-wrapper">
+                <!-- Sidebar -->
+                <div>
+
+                    <ul class="categories-list">
+                        <li>Bikes</li>
+                        <li>Motorcycles <span class="count">(1,33,042)</span></li>
+                        <li class="active">Scooters <span class="count">(40,625)</span></li>
+                        <li>Spare Parts <span class="count">(7,686)</span></li>
+                        <li>Bicycles <span class="count">(23,110)</span></li>
+                    </ul>
+                </div>
+
+                <div class="categories-section">
+
+                    <ul class="categories-list">
+                        <li>Maharashtra <span class="count">(4,925)</span></li>
+                        <li>Uttar Pradesh <span class="count">(4,245)</span></li>
+                        <li>Kerala <span class="count">(3,773)</span></li>
+                        <li>Tamil Nadu <span class="count">(3,622)</span></li>
+                        <li>Karnataka <span class="count">(3,350)</span></li>
+                        <li>Telangana <span class="count">(3,210)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content mt-5">
+                <div class="sort-section">
+                    <div class="total-ads">40,625 ads in India</div>
+                    <select class="sort-dropdown">
+                        <option>SORT BY: Date Published</option>
+                    </select>
+                </div>
+
+                <div class="products-grid d-flex  flex-wrap">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="Photo/sc7.jpg" class="product-image" alt="Honda Dio">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 3,333</div>
+                            <div class="details">2024 - 0 km</div>
+                            <div class="title">Honda Dio</div>
+                            <div class="location-date">
+                                <span>Arumbakkam</span>
+                                <span>Nov 18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="Photo/sc6.jpg" class="product-image" alt="TVS XL100">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 50,000</div>
+                            <div class="details">2022 - 27,800 km</div>
+                            <div class="title">TVS XL100 Heavy Duty</div>
+                            <div class="location-date">
+                                <span>Ejipura</span>
+                                <span>2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="Photo/sc8.jpg" class="product-image" alt="Yamaha Ray">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 7,777</div>
+                            <div class="details">2024 - 1 km</div>
+                            <div class="title">Yamaha Ray ZR 125</div>
+                            <div class="location-date">
+                                <span>Porur</span>
+                                <span>Dec 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Photo/sc6.jpg" class="product-image" alt="Honda Dio">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 3,333</div>
+                            <div class="details">2024 - 0 km</div>
+                            <div class="title">Honda Dio</div>
+                            <div class="location-date">
+                                <span>Arumbakkam</span>
+                                <span>Nov 18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="Photo/sc7.jpg" class="product-image" alt="TVS XL100">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 50,000</div>
+                            <div class="details">2022 - 27,800 km</div>
+                            <div class="title">TVS XL100 Heavy Duty</div>
+                            <div class="location-date">
+                                <span>Ejipura</span>
+                                <span>2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="Photo/sc6.jpg" class="product-image" alt="Yamaha Ray">
+                        <span class="featured-tag">FEATURED</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-info">
+                            <div class="price">₹ 7,777</div>
+                            <div class="details">2024 - 1 km</div>
+                            <div class="title">Yamaha Ray ZR 125</div>
+                            <div class="location-date">
+                                <span>Porur</span>
+                                <span>Dec 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="product-card">
+                            <img src="Photo/sc7.jpg" class="product-image" alt="Honda Dio">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 3,333</div>
+                                <div class="details">2024 - 0 km</div>
+                                <div class="title">Honda Dio</div>
+                                <div class="location-date">
+                                    <span>Arumbakkam</span>
+                                    <span>Nov 18</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <img src="Photo/sc8.jpg" class="product-image" alt="TVS XL100">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 50,000</div>
+                                <div class="details">2022 - 27,800 km</div>
+                                <div class="title">TVS XL100 Heavy Duty</div>
+                                <div class="location-date">
+                                    <span>Ejipura</span>
+                                    <span>2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <img src="Photo/sc7.jpg" class="product-image" alt="Yamaha Ray">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 7,777</div>
+                                <div class="details">2024 - 1 km</div>
+                                <div class="title">Yamaha Ray ZR 125</div>
+                                <div class="location-date">
+                                    <span>Porur</span>
+                                    <span>Dec 12</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+                <footer class="foot-sec">
+                    <div class="footsec-main">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-sm-12 py-1 px-1 box_1">
+                                    <h6>POPULAR CATEGORIES</h6>
+                                    <ul>
+                                        <li><a href="">Cars</a></li>
+                                        <li><a href="">Flat for Rent</a></li>
+                                        <li><a href="">Mobile Phones</a></li>
+                                        <li><a href="">Jobs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-12 py-1 px-1 box_2">
+                                    <h6>TRENDING SEARCHES</h6>
+                                    <ul>
+                                        <li><a href="">Bikes</a></li>
+                                        <li><a href="">Watches</a></li>
+                                        <li><a href="">Books</a></li>
+                                        <li><a href="">Dogs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-12 col-sm-12 py-1 px-1 box_3">
+                                    <h6>ABOUT US</h6>
+                                    <ul>
+                                        <li><a href="">About EMPG</a></li>
+                                        <li><a href="">OLX Blog</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">OLX for Business</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-12 py-1 px-1 box_4">
+                                    <h6>OLX</h6>
+                                    <ul>
+                                        <li><a href="">Help</a></li>
+                                        <li><a href="">Sitemap</a></li>
+                                        <li><a href="">Terms of use</a></li>
+                                        <li><a href="">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 py-1 px-1 box_5">
+                                    <h6>FOLLOW US</h6>
+                                    <div class="icon-container">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+                                        <a href="#"><i class="fa-sharp fa-solid fa-play"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="./Assets/Appstore Btn.svg" alt="">
+                                        <img src="./Assets/Playstore Btn.svg" alt="">
+                                        <img src="./Assets/App Gallery Btn.svg" alt="">
+                                    </div>
+
+
+
+
+                </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f929a8100c.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoriesHeader = document.getElementById('categoriesHeader');
+        const categoriesList = document.getElementById('categoriesList');
+        const chevron = categoriesHeader.querySelector('.chevron');
+
+        // Show categories by default
+        categoriesList.classList.add('show');
+        chevron.classList.add('expanded');
+
+        categoriesHeader.addEventListener('click', function () {
+            categoriesList.classList.toggle('show');
+            chevron.classList.toggle('expanded');
+        });
+    });
+</script>
+
+</html>

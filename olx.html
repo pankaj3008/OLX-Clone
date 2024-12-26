@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Photo/Main logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Photo/OLX.png" alt="Logo">
+        </div>
+
+        <div class="location">
+            <i class="fas fa-search"></i>
+            <input type="text" class="location-text" placeholder="India" style="width: 120px;">
+            <span class="dropdown-arrow" tabindex="0"><i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-menu">
+                <div>
+                    <hr>
+                    <h5 style="padding-bottom: 30px;">
+                        <P style="font-weight: 100; color: #888; font-size: 16px;margin-top: 20px;margin-left: 10px;">
+                            RECENT LOCATIONS</P>
+                    </h5>
+                    <div class="location-option" style="font-size: 20px;"><i class="fas fa-map-marker-alt"
+                            style="margin-right: 10px;"></i> Bharuch </div>
+                    <hr>
+                    <P style="font-weight: 100; color: #888; font-size: 16px;margin-top: 20px;margin-left: 10px;">
+                        POPULAR LOCATIONS</P>
+                </div>
+                <div class="location-option" style="font-size: 20px;"><i class="fas fa-map-marker-alt"
+                        style="margin-right: 10px;margin-top: 17px;"></i> Kerala </div>
+                <div class="location-option" style="font-size: 20px;"><i class="fas fa-map-marker-alt"
+                        style="margin-right: 10px;margin-top: 17px;"></i> Tamil Nadu </div>
+                <div class="location-option" style="font-size: 20px;"><i class="fas fa-map-marker-alt"
+                        style="margin-right: 10px;margin-top: 17px;"></i> Punjab </div>
+                <div class="location-option" style="font-size: 20px;"><i class="fas fa-map-marker-alt"
+                        style="margin-right: 10px;margin-top: 17px;"></i> Maharasthra </div>
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="search-label">Search</div>
+            <div class="text-container">
+                <div class="text-item">"Cars"</div>
+                <div class="text-item">"Mobiles"</div>
+            </div>
+            <input type="text" class="location-text" placeholder="">
+        </div>
+        <div class="search-main">
+            <i class="fas fa-search search-icon-1"></i>
+        </div>
+
+        <div class="language-dropdown">
+            <select class="language-select" style="font-weight: 700;color: #21324b;">
+                <option value="en">ENGLISH</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+        <span class="Login">Login</span>
+        <button class="button"></button>
+        </div>
+    </nav>
+
+    <div class="top-nav">
+        <div class="dropdown-1">
+            <button class="dropbtn">ALL CATEGORIES ∨</button>
+            <div class="dropdown-content-1">
+                <div class="category-grid">
+                    <div class="category">
+                        <h3>Cars & Bikes</h3>
+                        <ul>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Motorcycles</a></li>
+                            <li><a href="#">Scooters</a></li>
+                            <li><a href="#">Spare Parts</a></li>
+                            <li><a href="#">Bicycles</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Mobiles</h3>
+                        <ul>
+                            <li><a href="#">Mobile Phones</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Tablets</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Properties</h3>
+                        <ul>
+                            <li><a href="#">For Sale: Houses & Apartments</a></li>
+                            <li><a href="#">For Rent: Houses & Apartments</a></li>
+                            <li><a href="#">Lands & Plots</a></li>
+                            <li><a href="#">For Rent: Shops & Offices</a></li>
+                            <li><a href="#">For Sale: Shops & Offices</a></li>
+                            <li><a href="#">PG & Guest Houses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Electronics & Appliances</h3>
+                        <ul>
+                            <li><a href="#">TVs, Video - Audio</a></li>
+                            <li><a href="#">Kitchen & Other Appliances</a></li>
+                            <li><a href="#">Computers & Laptops</a></li>
+                            <li><a href="#">Cameras & Lenses</a></li>
+                            <li><a href="#">Games & Entertainment</a></li>
+                            <li><a href="#">Fridges</a></li>
+                            <li><a href="#">Computer Accessories</a></li>
+                            <li><a href="#">Hard Disks, Printers & Monitors</a></li>
+                            <li><a href="#">ACs</a></li>
+                            <li><a href="#">Washing Machines</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Furniture</h3>
+                        <ul>
+                            <li><a href="#">Sofa & Dining</a></li>
+                            <li><a href="#">Beds & Wardrobes</a></li>
+                            <li><a href="#">Home Decor & Garden</a></li>
+                            <li><a href="#">Kids Furniture</a></li>
+                            <li><a href="#">Other Household Items</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Fashion</h3>
+                        <ul>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Books & Hobbies</h3>
+                        <ul>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Gym & Fitness</a></li>
+                            <li><a href="#">Musical Instruments</a></li>
+                            <li><a href="#">Sports Equipment</a></li>
+                            <li><a href="#">Other Hobbies</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Pets</h3>
+                        <ul>
+                            <li><a href="#">Fishes & Aquarium</a></li>
+                            <li><a href="#">Pet Food & Accessories</a></li>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Other Pets</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Education & Classes</a></li>
+                            <li><a href="#">Tours & Travel</a></li>
+                            <li><a href="#">Electronics Repair & Services</a></li>
+                            <li><a href="#">Health & Beauty</a></li>
+                            <li><a href="#">Home Renovation & Repair</a></li>
+                            <li><a href="#">Cleaning & Pest Control</a></li>
+                            <li><a href="#">Legal & Documentation Services</a></li>
+                            <li><a href="#">Packers & Movers</a></li>
+                            <li><a href="#">Other Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Jobs</h3>
+                        <ul>
+                            <li><a href="#">Data entry & Back office</a></li>
+                            <li><a href="#">Sales & Marketing</a></li>
+                            <li><a href="#">BPO & Telecaller</a></li>
+                            <li><a href="#">Driver</a></li>
+                            <li><a href="#">Office Assistant</a></li>
+                            <li><a href="#">Delivery & Collection</a></li>
+                            <li><a href="#">Teacher</a></li>
+                            <li><a href="#">Cook</a></li>
+                            <li><a href="#">Receptionist & Front office</a></li>
+                            <li><a href="#">IT Engineer & Developer</a></li>
+                            <li><a href="#">Hotel & Travel Executive</a></li>
+                            <li><a href="#">Accountant</a></li>
+                            <li><a href="#">Designer</a></li>
+                            <li><a href="#">Other Jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <h3>Commercial Vehicles & Spares</h3>
+                        <ul>
+                            <li><a href="#">Commercial & Other Vehicles</a></li>
+                            <li><a href="#">Spare Parts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="live-olx-project/cars.html">Cars</a>
+            <a href="live-olx-project/motorcycles.html">Motorcycles</a>
+            <a href="Mobile Phone.html">Mobile Phones</a>
+            <a href="House & Apartmant.html">For Sale: Houses & Apartments</a>
+            <a href="olx2.html">Scooters</a>
+            <a href="#">Commercial & Other Vehicles</a>
+            <a href="House & Apartmant.html">For Rent: Houses & Apartments</a>
+        </div>
+    </div>
+
+
+    <h2 class="h2-fresh">Fresh recommendations</h2>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+                <div class="featured">FEATURED</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Bharuch Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+                <div class="featured">FEATURED</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 15,000</div>
+                <div class="specs">2 Bds - 2 Ba - 1399 ft2</div>
+                <div class="location-1">2bhk furnished at shrvan chokdi for bachelor's
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address">Bharuch INA, Bharuch, Gujarat</div>
+                <div class="date">Dec 08</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Oppo.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 63,000</div>
+                <div class="specs">Oppo Find X8 12/255 </div>
+                <div class="location-1">Alfa Society, Bharuch,
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Realme 11 Pro 5G.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 18,000</div>
+                <div class="specs">Realme 11 pro 5g 8 256</div>
+                <div class="location-1">Abad Nagar, Bharuch, Gujarat</div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+        <div class="card" style="background-color: #3e89df;color: #ffffff;">
+            <h3 style="margin-left: 45px;margin-top: 20px;">Want to see your stuff here?</h3>
+            <p style="margin-top: 40px; text-align: center;margin-left: 10px;margin-right: 10px;">Make some extra cash
+                by selling things in your community.Go on it's quick and easy.</p>
+            <button class="start-button">Star Selling</button>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Oppo.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 63,000</div>
+                <div class="specs">Oppo Find X8 12/255 </div>
+                <div class="location-1">Alfa Society, Bharuch,
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Realme 11 Pro 5G.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 18,000</div>
+                <div class="specs">Realme 11 pro 5g 8 256</div>
+                <div class="location-1">Abad Nagar, Bharuch, Gujarat</div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Bharuch Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 15,000</div>
+                <div class="specs">2 Bds - 2 Ba - 1399 ft2</div>
+                <div class="location-1">2bhk furnished at shrvan chokdi for bachelor's
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address">Bharuch INA, Bharuch, Gujarat</div>
+                <div class="date">Dec 08</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Oppo.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 63,000</div>
+                <div class="specs">Oppo Find X8 12/255 </div>
+                <div class="location-1">Alfa Society, Bharuch,
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Realme 11 Pro 5G.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 18,000</div>
+                <div class="specs">Realme 11 pro 5g 8 256</div>
+                <div class="location-1">Abad Nagar, Bharuch, Gujarat</div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Bharuch Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 15,000</div>
+                <div class="specs">2 Bds - 2 Ba - 1399 ft2</div>
+                <div class="location-1">2bhk furnished at shrvan chokdi for bachelor's
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address">Bharuch INA, Bharuch, Gujarat</div>
+                <div class="date">Dec 08</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Oppo.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 63,000</div>
+                <div class="specs">Oppo Find X8 12/255 </div>
+                <div class="location-1">Alfa Society, Bharuch,
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Realme 11 Pro 5G.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 18,000</div>
+                <div class="specs">Realme 11 pro 5g 8 256</div>
+                <div class="location-1">Abad Nagar, Bharuch, Gujarat</div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Bharuch Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 15,000</div>
+                <div class="specs">2 Bds - 2 Ba - 1399 ft2</div>
+                <div class="location-1">2bhk furnished at shrvan chokdi for bachelor's
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address">Bharuch INA, Bharuch, Gujarat</div>
+                <div class="date">Dec 08</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Oppo.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 63,000</div>
+                <div class="specs">Oppo Find X8 12/255 </div>
+                <div class="location-1">Alfa Society, Bharuch,
+                </div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Realme 11 Pro 5G.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 18,000</div>
+                <div class="specs">Realme 11 pro 5g 8 256</div>
+                <div class="location-1">Abad Nagar, Bharuch, Gujarat</div>
+            </div>
+            <div class="details-1">
+                <div class="address"></div>
+                <div class="date">Today</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-wrapper">
+                <img src="Photo/Dahej Room.png" alt="Property" class="property-image">
+                <div class="heart">♡</div>
+            </div>
+            <div class="details">
+                <div class="price">₹ 5,500</div>
+                <div class="specs">1 Bds - 1 Ba - 800 ft²</div>
+                <div class="location-1">1 ROOM FOR SINGLE PERSON AT SHR...</div>
+            </div>
+            <div class="details-1">
+                <div class="address">DAHEJ BY PASS ROAD, BHARUCH</div>
+                <div class="date">DEC 01</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button class="start-button-1" style="font-size: 16px;font-weight: 300;height: 48Px;width: 100.58px;">Load
+        More</button>
+
+    <h3 class="h3-promote"> PROMOTED CONTENT</h3>
+
+    <div class="grid-container-1">
+        <div class="ad-card">
+            <img src="Photo/Ad 1.png" alt="Jewelry Collection" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Bharüch: I Will Sell Used Jewelry. Look At These Prices</a>
+            </div>
+        </div>
+
+        <div class="ad-card">
+            <img src="Photo/Ad 2.png" alt="Cars" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Unsold Cars Clearance Of 2023 In Bharüch (Limited Time)</a>
+            </div>
+        </div>
+
+        <div class="ad-card">
+            <img src="Photo/Ad 3.png" alt="Electronics" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Unsold Laptops Are Being Sold For Next To Nothing</a>
+            </div>
+        </div>
+
+        <div class="ad-card">
+            <img src="Photo/Ad 4.png" alt="Laptops" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Solar Panels Price: See How Much It Will Cost To Install Them</a>
+            </div>
+        </div>
+
+        <div class="ad-card">
+            <img src="Photo/Ad 5.png" alt="Vehicles" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Unsold Gold Bracelets Selling For Next To Nothing In Murnbal</a>
+            </div>
+        </div>
+
+        <div class="ad-card">
+            <img src="Photo/Ad 6.png" alt="Technology" class="ad-image">
+            <div class="ad-content">
+                <div class="ad-label">Search Ads</div>
+                <a href="#" class="ad-title">Used Cars Prices In Bharüch Will Surprise You</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-container">
+        <div class="top-section">
+            <div class="location-section">
+                <div class="column">
+                    <h3>POPULAR LOCATIONS</h3>
+                    <a href="#">Kolkata</a>
+                    <a href="#">Mumbai</a>
+                    <a href="#">Chennai</a>
+                    <a href="#">Pune</a>
+                </div>
+                <div class="column trending-locations">
+                    <h3>TRENDING LOCATIONS</h3>
+                    <a href="#">Bhubaneshwar</a>
+                    <a href="#">Hyderabad</a>
+                    <a href="#">Chandigarh</a>
+                    <a href="#">Nashik</a>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="column">
+                    <h3>ABOUT US</h3>
+                    <a href="#">Tech@OLX</a>
+                </div>
+                <div class="column">
+                    <h3>OLX</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Help</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Legal & Privacy Information</a>
+                </div>
+            </div>
+            <div class="follow-section column">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="bottom-content">
+                <div class="company-logos">
+                    <img src="Photo/Brand Logo 1.png" alt="CarTrade Group" class="main-logo">
+                    <div class="logo-divider"></div>
+                    <div class="secondary-logos">
+                        <img src="Photo/Brand Logo 6.png" alt="OLX">
+                        <img src="Photo/Brand Logo  2.png" alt="CarWale">
+                        <img src="Photo/Brand Logo  3.png" alt="BikeWale">
+                        <img src="Photo/Brand Logo  4.png" alt="CarTrade">
+                        <img src="Photo/Brand Logo  5.png" alt="Mobility Outlook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

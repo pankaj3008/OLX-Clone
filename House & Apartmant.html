@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/OLX.css">
+    <link rel="icon" href="Photo/Main logo.png">
+    <title>Buy & Sell House/Apartment</title>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+<div id="main-heading-navbar">
+    <div class="header">
+        <div class="navbar">
+            <img id="logoimg" src="img/OLX-Logo Black.png">
+
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text"> Location</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('West Bengal')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>West Bengal</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Uttar Pradesh')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Uttar Pradesh</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Karnataka')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Karnataka</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bihar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bihar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Maharashtra')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Maharashtra</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+
+
+            <div class="language">
+                <p id="eng_tag"> English</p>  <i class="fa-solid fa-chevron-down" id="moving"></i>
+               
+                <ul class="hin_eng">
+                    <li onclick="languageolx('English')"> English </li>
+                    <li onclick="languageolx('हिन्दी')">हिन्दी</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="your_logo">
+                <div class="person_img" id="person_img_id">
+                    <div>
+                        <a class="button" href="#divOne">Login</a>
+                    </div>
+                    
+                    <div class="overlay" id="divOne">
+                        <div class="wrapper">
+                            <h2></h2><a class="close" href="#">&times;</a>
+                            <div class="content">
+                                <div class="containerpopup">
+                                    <img width="60%" src="C:\Users\shara\Downloads\loginEntryPointPost.png" alt="">
+                                   
+                                    <div class="continuephone">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i> <span>Continue with Phone</span>
+                                    </div>
+                                 
+                                    <div class="continueemail">
+                                        <i class="fa fa-google" aria-hidden="true"></i> <span>Continue with Google</span>
+                                    </div>
+
+                                    <div>
+                                        <p>OR</p>
+                                    </div>
+                                    <div class="loginwithemail_btn">
+                                        <a href="signup.html">Login with Email</a>
+                                    </div>
+
+                                    <div>
+                                        <p>All your personal details are safe with us.</p>
+                                        <p>If you continue, you are accepting <a href="">OLX Terms and Conditions and Privacy Policy</a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <img src="C:\Users\shara\Downloads\1024px-Eo_circle_pink_white_letter-s.png"> -->
+                    
+                </div>
+
+                
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <button id="goToSell"> <i class="fa-solid fa-plus"></i>
+                    <p> SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+    
+
+<!-- ====================================sub navbar=========================================== -->
+
+<div class="sub_nav_bar">
+    <div class="ddmenu">
+        <div id="show_all_categories">All Categories <span><i class="fa-solid fa-chevron-down" id="cat"></i></span></div>
+        <div>Cars</div>
+        <div id="bikes">Motorcycles</div>
+        <div id="mobiles"> <a href="Mobile Phone.html" style="color: black;">Mobile Phones</a></div>
+        <div id="houses"><a href="House & Apartmant.html" style="color: black;">For Sale:Houses & Apartments</a></div>
+        <div>OLX Renew(Mobile)</div>
+        <div><a style="color: black;" href="olx2.html">Scooters</a></div>
+        <div>Commercial & other Vehicles</div>
+        <div><a style="color: black;" href="House & Apartmant.html">For Rent: Houses & Apartments</a></div>
+    </div>
+</div>
+
+<!-- ====================================display submenus======================================== -->
+
+<div class="all_categories">
+    <div class="allcatsubmenu">
+        <div class="all_cat_subflex">
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>OLX Autos (Cars)</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Properties</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>For Sale:House & Apartments</span></a></div>
+                <div class="subsubmenus"><a href=""><span>For Rent:House & Apartments</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Lands & Plots</span></a></div>
+                <div class="subsubmenus"><a href=""><span>For Rent: Shops & Offices</span></a></div>
+                <div class="subsubmenus"><a href=""><span>For Sale:Shops & Offices</span></a></div>
+                <div class="subsubmenus"><a href=""><span>PG & Guest Houses</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Mobiles</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Mobile Phones</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Accessories</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Tablets</span></a></div>
+            </div>
+        </div>
+        <div class="all_cat_subflex">
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Jobs</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Data entry & Back office</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Sales & Marketing</span></a></div>
+                <div class="subsubmenus"><a href=""><span>BPO & Telecaller</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Driver</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Office Assistant</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Delivery & Collection</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Teacher</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Cook</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Receptionist & Front office</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Operator & Technician</span></a></div>
+                <div class="subsubmenus"><a href=""><span>IT Engineer & Developer</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Hotel & Travel Executive</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Accountant</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Designer</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Other Jobs</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Bikes</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Motorcycles</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Scooters</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Bicycles</span></a></div>
+            </div>
+        </div>
+        <div class="all_cat_subflex">
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Electronics & Appliances</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>TVs, Video - Audio</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Kitchen & Other Appliances</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Computer & Laptops</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Cameras & Lenses</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Game & Entertainment</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Fridges</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Computer Accessories</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Hard Disks, Printers & Monitors</span></a></div>
+                <div class="subsubmenus"><a href=""><span>ACs</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Washing Machines</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Commercial Vehicles & Spares</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Commercial & Other Vehicles</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Furniture</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Sofa & Dining</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Beds & Wardrobes</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Home Decor & Garden</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Kids Furniture</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Other Household Items</span></a></div>
+            </div>
+        </div>
+        <div class="all_cat_subflex">
+            <div class="catssubmenumainheading">
+                <div class="catssubmenumainheading">
+                    <div class="subheading"><a href=""><span>Fashion</span></a> </div>
+                    <div class="subsubmenus"><a href=""><span>Men</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Women</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Kids</span></a></div>
+                </div>
+                <div class="subheading"><a href=""><span>Books, Sports & Hobbies</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Books</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Gym & Fitness</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Musical Instruments</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Sports Equipment</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Other Hobbies</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Pets</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Fishing & Aquarium</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Pet Food & Accessories</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Dogs</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Other Pets</span></a></div>
+            </div>
+            <div class="catssubmenumainheading">
+                <div class="subheading"><a href=""><span>Services</span></a> </div>
+                <div class="subsubmenus"><a href=""><span>Electronics & Computer</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Education & Classes</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Drivers & Taxi</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Health & Beauty</span></a></div>
+                <div class="subsubmenus"><a href=""><span>Other Services</span></a></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ==================================== Body ======================================== -->
+
+<div class="container">
+    <div class="content-wrapper">
+        
+                <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="categories-section">
+                    <div class="category-header" id="categoriesHeader">
+                        <h2 class="section-title m-0">CATEGORIES</h2>
+                        <span class="chevron"></span>
+                    </div>
+                    <ul class="categories-list" id="categoriesList">
+                        <li>Bikes</li>
+                        <li>Motorcycles <span class="count">(1,33,042)</span></li>
+                        <li class="active">Scooters <span class="count">(40,625)</span></li>
+                        <li>Spare Parts <span class="count">(7,686)</span></li>
+                        <li>Bicycles <span class="count">(23,110)</span></li>
+                    </ul>
+                </div>
+
+                <div class="categories-section">
+                    <div class="category-header">
+                        <h2 class="section-title m-0">LOCATIONS</h2>
+                        <span class="chevron"></span>
+                    </div>
+                    <ul class="categories-list">
+                        <li>Maharashtra <span class="count">(4,925)</span></li>
+                        <li>Uttar Pradesh <span class="count">(4,245)</span></li>
+                        <li>Kerala <span class="count">(3,773)</span></li>
+                        <li>Tamil Nadu <span class="count">(3,622)</span></li>
+                        <li>Karnataka <span class="count">(3,350)</span></li>
+                        <li>Telangana <span class="count">(3,210)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content-wrapper">
+                <!-- Sidebar -->
+                <div>
+                    
+                        <ul class="categories-list">
+                            <li>Bikes</li>
+                            <li>Motorcycles <span class="count">(1,33,042)</span></li>
+                            <li class="active">Scooters <span class="count">(40,625)</span></li>
+                            <li>Spare Parts <span class="count">(7,686)</span></li>
+                            <li>Bicycles <span class="count">(23,110)</span></li>
+                        </ul>
+                    </div>
+    
+                    <div class="categories-section">
+                        
+                        <ul class="categories-list">
+                            <li>Maharashtra <span class="count">(4,925)</span></li>
+                            <li>Uttar Pradesh <span class="count">(4,245)</span></li>
+                            <li>Kerala <span class="count">(3,773)</span></li>
+                            <li>Tamil Nadu <span class="count">(3,622)</span></li>
+                            <li>Karnataka <span class="count">(3,350)</span></li>
+                            <li>Telangana <span class="count">(3,210)</span></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Main Content -->
+                <div class="main-content">
+                    <div class="sort-section">
+                        <div class="total-ads">40,625 ads in India</div>
+                        <select class="sort-dropdown">
+                            <option>SORT BY: Date Published</option>
+                        </select>
+                    </div>
+    
+                    <div class="products-grid d-flex  flex-wrap">
+                        <!-- Product Card 1 -->
+                        <div class="product-card">
+                            <img src="img/i.jpg" class="product-image" alt="Honda Dio">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 53,00,000</div>
+                                <div class="details">3 Bds - 3 Ba - 1650 ft2</div>
+                                <div class="title">1650Sqft & 3Bhk beautiful villa for sale in paravur area</div>
+                                <div class="location-date">
+                                    <span>Arumbakkam</span>
+                                    <span>Nov 18</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <img src="img/i2.jpg" class="product-image" alt="TVS XL100">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 87,50,000
+                                </div>
+                                <div class="details">4 Bds - 4 Ba - 2000 ft2</div>
+                                <div class="title">2000 SQFT - 10CENT - 4BHK Villa For Sale In Palakkad Town</div>
+                                <div class="location-date">
+                                    <span>Ejipura</span>
+                                    <span>2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <img src="img/i3.jpg" class="product-image" alt="Yamaha Ray">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 26,00,000</div>
+                                <div class="details">1 Bds - 2 Ba - 480 ft2</div>
+                                <div class="title">1BHK Villa 26lacs@Kovilpalayam On road project</div>
+                                <div class="location-date">
+                                    <span>Porur</span>
+                                    <span>Dec 12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 --> 
+                        <div class="product-card">
+                            <img src="img/i4.jpg" class="product-image" alt="Honda Dio">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 42,00,000</div>
+                                <div class="details">2 Bds - 2 Ba - 750 ft2</div>
+                                <div class="title">MADHAVARAM ( PRUNGAVUR ) CHENNAI - 600103</div>
+                                <div class="location-date">
+                                    <span>Arumbakkam</span>
+                                    <span>Nov 18</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 5 -->
+                        <div class="product-card">
+                            <img src="img/i5.jpg" class="product-image" alt="TVS XL100">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 14,50,000</div>
+                                <div class="details">1 Bds - 1 Ba - 700 ft2</div>
+                                <div class="title">Shree Hari Residency</div>
+                                <div class="location-date">
+                                    <span>Ejipura</span>
+                                    <span>2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 6 -->
+                        <div class="product-card">
+                            <img src="img/i6.jpg" class="product-image" alt="Yamaha Ray">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 54,99,633</div>
+                                <div class="details">3 Bds - 2 Ba - 1550 ft2</div>
+                                <div class="title">Best Ready to Shift 3 Bhk home, @ Sec 1.</div>
+                                <div class="location-date">
+                                    <span>Porur</span>
+                                    <span>Dec 12</span>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Product Card 7 -->
+                        <div class="product-card">
+                            <img src="img/i7.jpg" class="product-image" alt="Honda Dio">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 18,00,000</div>
+                                <div class="details">2 Bds - 1 Ba - 500 ft2</div>
+                                <div class="title">50 cent and a house for sale in kanchiyar
+                                </div>
+                                <div class="location-date">
+                                    <span>Arumbakkam</span>
+                                    <span>Nov 18</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 8 -->
+                        <div class="product-card">
+                            <img src="img/i8.jpg" class="product-image" alt="TVS XL100">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 50,000</div>
+                                <div class="details">2022 - 27,800 km</div>
+                                <div class="title">TVS XL100 Heavy Duty</div>
+                                <div class="location-date">
+                                    <span>Ejipura</span>
+                                    <span>2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product Card 9 -->
+                        <div class="product-card">
+                            <img src="img/i9.jpg" class="product-image" alt="Yamaha Ray">
+                            <span class="featured-tag">FEATURED</span>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="product-info">
+                                <div class="price">₹ 59,00,000</div>
+                                <div class="details">3 Bds - 2 Ba - 1310 ft2</div>
+                                <div class="title">3&4BHK luxury flat in Gated society RR homes near vaishali nagar</div>
+                                <div class="location-date">
+                                    <span>Porur</span>
+                                    <span>Dec 12</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+<!-- ==================================== Footer======================================== -->
+
+
+<footer>
+    <div class="footermain">
+        <div class="footercontent">
+            <div class="footerflex">
+                <div>POPULAR LOCATIONS</div>
+                <ul>
+                    <li>
+                        <a href="">Kolkata</a>
+                    </li>
+                    <li>
+                        <a href="">Mumbai</a>
+                    </li>
+                    <li>
+                        <a href="">Chennai</a>
+                    </li>
+                    <li>
+                        <a href="">Pune</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerflex">
+                <div>TRENDING LOCATIONS</div>
+                <ul>
+                    <li>
+                        <a href="">Bhubaneshwar</a>
+                    </li>
+                    <li>
+                        <a href="">Hyderabad</a>
+                    </li>
+                    <li>
+                        <a href="">Chandigarh</a>
+                    </li>
+                    <li>
+                        <a href="">Nashik</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerflex">
+                <div>ABOUT US</div>
+                <ul>
+                    <li>
+                        <a href="">About OLX Group</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">OLXPeople</a>
+                    </li>
+                    <li>
+                        <a href="">Waah Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerflex">
+                <div>OLX</div>
+                <ul>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                    <li>
+                        <a href="">Sitemap</a>
+                    </li>
+                    <li>
+                        <a href="">Legal & Privacy Information</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">OLX Autos Sell Car</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerflex">
+                <div>FOLLOW US</div>
+                <div class="footericons">
+                    <div><i class="fa fa-facebook"></i></div>
+                    <div><i class="fa fa-instagram"></i></div>
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class="fa fa-play"></i></div>
+                </div>
+                <div>
+                    <img src="https://statics.olx.in/external/base/img/playstore.png" alt="">
+                    <img src="https://statics.olx.in/external/base/img/appstore.png" alt="">
+                </div>
+                   
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyrightflex">
+            <div><span>Other Countries</span>  Pakistan - South Africa - Indonesia</div>
+            <div>All right reserved &copy; 2006-2022 OLX</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
+<script src="./scripts/navbar.js"></script>
