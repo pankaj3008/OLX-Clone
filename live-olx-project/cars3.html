@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars 3</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="cars3.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+</head>
+<body>
+    <!---------------------------Nav Section------------------------------------->
+    <nav class=" nav shadow-md ">
+        <div class="nav container-fluid">
+            <img src="olx-logo.png" class="img">
+
+            <select  type="text "  class=" dropdown-toggle menu navh" data-bs-toggle="dropdown" aria-expanded="false">
+                India
+              
+     
+                <option> <a class="dropdown-item " href="#"> India</a></option>
+                <br>
+                <option><hr class="dropdown-divider"></option>
+                <li><h3>POPULAR LOCATIONS<h3></li>
+                <option><a class="dropdown-item" href="#">Kerala</a></option>
+                <option><a class="dropdown-item" href="#">Panjab</a></option>
+                <option><a class="dropdown-item" href="#">Tamil Nadu</a></option>
+                <option><a class="dropdown-item" href="#">Gujarat</a></option>
+                <option><a class="dropdown-item" href="#">Maharashtra</a></option>
+                <br>
+             
+            </select>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+               <input for="search " type="text" placeholder=" Find Cars, Mobile Phones and more..." class="search navh"></input>
+
+               <select class="language dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+        
+                <option><a class="dropdown-item active" href="#">English</a></option>
+                <option><a class="dropdown-item" href="#">Hindi</a></option>
+              
+               
+            </select>
+
+
+            <span><a href="#" class="login">Login</a></span>
+
+            <span><a href="#"  class="sell"> + Sell</a></span>
+        </div>
+    </nav>
+
+
+<!----------------------Menu Section---------------------------------->
+<div class=" shadow-sm menu2">
+    <div class="container menu1 ">
+        <button class="categories dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            ALL CATEGORIES
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+         <a class="dropdown-item menuh" href="#"><h6>Cars</h6></a>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Bikes</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">Motorcycles</a></li>
+            <li><a class="dropdown-item menuh" href="#">MScooters</a></li>
+            <li><a class="dropdown-item menuh" href="#">Spare Parts</a></li>
+            <li><a class="dropdown-item menuh" href="#">Bicycles</a></li>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Properties</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">For Sale: Houses & Apartments</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Rent: Houses & Apartments</a></li>
+            <li><a class="dropdown-item menuh" href="#">Lands & Plots</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Rent: Shops & Offices</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Sale: Shops & Offices</a></li>
+            <li><a class="dropdown-item menuh" href="#">PG & Guest Houses</a></li>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Electronics & Appliances</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">TVs, Video - Audio</a></li>
+            <li><a class="dropdown-item menuh" href="#">Kitchen & Other Appliances</a></li>
+            <li><a class="dropdown-item menuh" href="#">Computers & Laptops</a></li>
+            <li><a class="dropdown-item menuh" href="#">Cameras & Lenses</a></li>
+            <li><a class="dropdown-item menuh" href="#">Games & Entertainment</a></li>
+            <li><a class="dropdown-item menuh" href="#">Fridges</a></li>
+            <li><a class="dropdown-item menuh" href="#">Computer Accessories</a></li>
+            <li><a class="dropdown-item menuh" href="#">Hard Disks, Printers & Monitors</a></li>
+            <li><a class="dropdown-item menuh" href="#">ACs</a></li>
+            <li><a class="dropdown-item menuh" href="#">Washing Machines</a></li>
+            </ul>
+
+            <span><a href="cars.html" class="menuu menuh">Cars</a></span>
+            <span><a href="motorcycles.html" class="menuu menuh">Motorcycles</a></span>
+            <span><a href="../Mobile Phone.html" class="menuu menuh">Mobile Phones</a></span>
+            <span><a href="../House & Apartmant.html" class="menuu menuh">For Sale: Houses & Apartments</a></span>
+            <span><a href="../olx2.html" class="menuu menuh">Scooters</a></span>
+            <span><a href="#" class="menuu menuh">Commercial & Other Vehicles</a></span>
+            <span><a href="../House & Apartmant.html" class="menuu menuh">For Rent: Houses & Apartments</a></span>
+
+</div>
+
+</div>
+
+<!--------------------------Home Section-------------------------------------->
+<br>
+<div class="homee">
+<div class="container home">
+<span style="color: rgb(154, 151, 151);">Home</span>
+
+<h1>Buy & Sell Used Cars in India</h1>
+
+<p style="color: rgb(152, 149, 149);">Find your perfect pre-owned car at OLX. Currently, there are more than 360635 second-hand cars from various brands, models, and price ranges at OLX. Whether you're searching for a hatchback, sedan, SUV, or luxury vehicle, we have something for everyone. Use the table below to navigate through popular brands:</p>
+
+
+<table class="table w-25">
+
+    <thead class="table-secondary thead">
+   <th> Brand </th>   
+   <th>Number of Cars</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="#">Maruti Suzuki</a></td>
+    <td>113580+</td>
+</tr>
+    <tr>
+        <td><a href="#">Hyundai</a></td>
+        <td>63190+</td>
+    </tr>
+    <tr>
+        <td><a href="#">Mahindra</a></td>
+        <td>29450+</td>
+    </tr>
+    <tr>
+        <td><a href="#">Toyota</a></td>
+        <td>25450+</td>
+    </tr>
+    <tr>
+        <td><a href="#">Honda</a></td>
+        <td>23420+</td>
+    </tr>
+    
+    </tbody>
+  </table>
+  <br>
+  <h4>Popular Car Models:</h4>
+  <p>Explore the most sought-after car models on OLX, <a href="#"> Maruti Suzuki Wagon R,</a><a href="#">Maruti Suzuki Swift Dzire,</a><a href="#"> Maruti Suzuki Swift,</a> <a href="#">Honda City and Hyundai Creta.</a>
+    Explore our listings to find detailed information about prices, photos, mileage, and more for your preferred model.</p>
+</div>
+</div>
+
+<section class="container section1">
+    <div class="accordion  left-part" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header ">
+            <button class="accordion-button menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+             CATEGORIES
+            </button>
+        
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>
+            --   All Categories
+            <br>
+            <br>
+          <span  class="accordion-collapse">Cars (3,62,178)</span>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            LOCATIONS
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+            <ul class="accordion-body list">
+              <li class="selected">India</li>
+              <li><a href="#" class="locations">Maharashtra (45,837)</a></li>
+              <li><a href="#" class="locations">Tamil Nadu (41,341)</a></li>
+              <li><a href="#" class="locations">Kerala (39,782)</a></li>
+              <li><a href="#" class="locations">Uttar Pradesh (28,440)</a></li>
+              <li><a href="#" class="locations">Karnataka (23,555)</a></li>
+              <li><a href="#" class="locations">Gujarat (21,771)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            BRAND AND MODEL
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+            <div class="accordion-body input-group">
+               
+                <input type="text" class="form-control" placeholder=" Search brand or modal" aria-label="Username" aria-describedby="basic-addon1">
+                 <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-magnifying-glass"></i></span>
+                   <br>
+                 
+            </div>
+            <h6 style="margin-left: 20px;"><b>POPULAR BRANDS</b></h6>
+            <span  style="margin-left: 20px;">Maruti Suzuki</span>
+            <br>
+            <span  style="margin-left: 20px;">Hyundai</span>
+            <br>
+            <span  style="margin-left: 20px;">Mahindra</span>
+            <br>
+            <span  style="margin-left: 20px;">Toyota</span>
+            <br>
+            <span  style="margin-left: 20px;">Tata</span>
+            <br>
+            <span  style="margin-left: 20px;">Honda</span>
+           <br>
+           <br>
+
+            <h6 style="margin-left: 20px;"><b>ALL BRANDS</b></h6>
+            
+            <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Maruti Suzuki (1,14,371)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hyundai (63,561)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+                 Mahindra (29,488)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+                Toyota (25,542)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Honda (23,595)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Tata (21,075)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Ford (10,687)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Volkswagen (10,616)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Renault (9,980)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Mercedes-Benz (8,178)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               BMW (6,120)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+               Kia (6,067)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+              Skoda (5,641)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+             Chevrolet (5,184)
+                </label>
+              </div>
+              <div class="form-check" style="margin-left: 20px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                <label class="form-check-label" for="flexCheckDefault">
+             Audi (4,746)
+                </label>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   TRANSIMISSION
+                  </button>
+              
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                   <span> Choose from below options</span>
+             <br>
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">Automatic         80,500+cars</li>
+                        <li class="list-group-item">Manual                2,60,000+cars</li>
+                
+                      </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+         
+          
+        </div>
+</div>
+        
+
+
+      
+      <!----------------cars section--------------------------------->
+      <div class="container right-part">
+      
+          362,773 ads in <strong>India</strong> 
+
+          <button class="bg-white dropdown-toggle float-end imgd" data-bs-toggle="dropdown" aria-expanded="false" style="border: 2px solid white;">
+          <b> SORT BY :</b> Date Published
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+
+            <li><a class="dropdown-item active" href="#">Date Published</a></li>
+            <li><a class="dropdown-item" href="#">Relevance</a></li>
+            <li><a class="dropdown-item" href="#">Price : Low to Heigh</a></li>
+            <li><a class="dropdown-item" href="#">Price : Heigh to Low</a></li>
+            <li><a class="dropdown-item" href="#">Distance</a></li>
+    </ul>
+    <br>
+    <br>
+  
+    <div class="card-group imgs">
+      <div class="card">
+        <img src="vento.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Volkswagen Vento</h5>
+          <p class="card-text">₹ 4,15,000
+            <br>
+            <span style="color: gray;">2014 - 120,200 (Manual)</span> 
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Edapally, Kochi
+
+          </small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="mercedesbenz.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mercedes-Benz Gla Class</h5>
+          <p class="card-text">₹ 14,99,000
+            <br>
+            <span style="color: gray;">2015 - 32,286km (Automatic)</span>
+
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Greater Kailash 1, Delhi</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="venue.jpeg" class="card-img-top" alt="..." style="height: 215px;">
+        <div class="card-body">
+          <h5 class="card-title">Hyundai Venue </h5>
+          <p class="card-text">₹ 7,75,000
+            <br>
+            <span style="color: gray;">2019 - 71,000km (Manual)</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Alipur, Delhi</small>
+        </div>
+      </div>
+    
+      </div>
+<br>
+      <div class="card-group imgs">
+        <div class="card">
+          <img src="kia.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kia Seltos</h5>
+            <p class="card-text">₹ 9,80,000
+              <br>
+              <span style="color: gray;">2020 - 35,000km</span> 
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Karol Bagh, Delhi
+            </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="audi.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Audi Q3</h5>
+            <p class="card-text">₹ 12,50,000
+              <br>
+              <span style="color: gray;">2015 - 20,500km (Automatic)</span>
+  
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Ballygunge Circular Area, Kolkata</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="thar3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahindra Thar</h5>
+            <p class="card-text">₹ 16,00,000
+              <br>
+              <span style="color: gray;">2022 - 14,000km (Automatic)</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Ashok Vihar, Delhi</small>
+          </div>
+        </div>
+      
+        </div>
+        <br>
+      <div class="card-group imgs">
+        <div class="card">
+          <img src="verna.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hyundai Verna</h5>
+            <p class="card-text">₹ 13,00,000
+              <br>
+              <span style="color: gray;">2023 - 8,000km (Manual)</span> 
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Airport Road, Ahmedabad
+
+            </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="rangerover.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Land Range Rover</h5>
+            <p class="card-text">₹ 70,00,000
+              <br>
+              <span style="color: gray;">2015 - 75,000 (Automatic)</span>
+  
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Worli, Mumbai</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="safari2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tata Safari</h5>
+            <p class="card-text">₹ 12,25,000
+              <br>
+              <span style="color: gray;">2021 - 51,000km (Manual)</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Rohini Sector 17, Delhi</small>
+          </div>
+        </div>
+        <br>
+        
+
+        <div class="card-group imgs">
+          <div class="card">
+            <img src="renault.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Renault Kwid</h5>
+              <p class="card-text">₹ 5,54,000
+                <br>
+                <span style="color: gray;">2018 - 75,000km(Manual)</span> 
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Bharanaganam, Palai
+  
+              </small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="nissan2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nissan Magnite</h5>
+              <p class="card-text">₹ 8,73,000
+                <br>
+                <span style="color: gray;">2021 - 26,218km</span>
+    
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Vadapalani BNDA Colony, Chennai</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="jeep.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jeep Compass</h5>
+              <p class="card-text">₹ 12,99,000
+                <br>
+                <span style="color: gray;">2019 - 45,721km (Manual)</span>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Teen Hath Naka, Thane</small>
+            </div>
+          </div>
+
+    
+
+
+      
+        </div>
+
+    </div>
+    <br>
+    <nav aria-label="Page navigation example justify-content-center">
+      <ul class="pagination justify-content-center">
+        <li class="page-item ">
+          <a class="page-link" href="cars2.html">Previous</a>
+        </li>
+        <li class="page-item "><a class="page-link" href="cars.html">1</a></li>
+        <li class="page-item "><a class="page-link" href="cars2.html">2</a></li>
+        <li class="page-item active"><a class="page-link" href="cars3.css">3</a></li>
+        <li class="page-item">
+          <a class="page-link disabled" >Next</a>
+        </li>
+      </ul>
+    </nav>
+
+<br>
+
+<span style="font-size: larger;">FAQS </span>
+<br>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: lightgray;border-radius: 5px;">
+            <b>Why buy a second hand car?</b>
+          </button>
+        </h2>
+        <br>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">There are several reasons why buying a second-hand car might be a good idea in India. Firstly, used cars are generally less expensive than brand new cars, which means you can save a lot of money. Secondly, used cars do not depreciate as quickly as new cars, so you may not lose as much money if you sell it later.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: lightgray;border-radius: 5px;">
+            <b>What is the starting price of a used car?</b>
+           </button>
+        </h2>
+<br>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">The starting price of a used car can vary greatly depending on a number of factors, such as the make and model of the car, its age, and its condition. In India, you can find used cars for as little as INR 50,000 or less, but there are also many used cars that are more expensive</div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: lightgray;border-radius: 5px;">
+            <b>What are the popular second hand car models?</b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Some of the most popular second-hand car models in India include the Maruti Suzuki Swift, Hyundai i10, Honda City, Toyota Innova, and Mahindra Scorpio. These models are known for their reliability, fuel efficiency, and affordable maintenance costs.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" style="background-color: lightgray;border-radius: 5px;">
+            <b>Which car brands have the most resale value?
+            </b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">In India, some of the car brands with the highest resale value include Maruti Suzuki, Hyundai, Honda, Toyota, and Mahindra. These brands are known for their durability, low maintenance costs, and wide-spread service network.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" style="background-color: lightgray;border-radius: 5px;">
+            <b>What are the most reliable second hand cars under 5 lakh?
+            </b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Some of the most reliable second-hand cars under 5 lakh include Maruti Suzuki Wagon R, Hyundai Santro, Tata Indica, and Maruti Suzuki Alto. These cars are known for their fuel efficiency, low maintenance costs, and affordable spare parts availability.</div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix" style="background-color: lightgray;border-radius: 5px;">
+            <b>What are the best SUV second hand cars?
+            </b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Best second-hand SUV models include the Mahindra Scorpio, Tata Safari, Ford Endeavour, Toyota Fortuner, and Hyundai Creta. These models are known for their ruggedness, reliability, and comfortable driving experience.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven" style="background-color: lightgray;border-radius: 5px;">
+            <b>How can I know if the price of the second hand car is appropriate?
+            </b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">To know if the price of a second-hand car is appropriate, you can check the market price of the same model and make on online portals or car valuation websites. You can also consult with a mechanic or a trusted car dealer to get an idea of the current market price of the car.
+
+
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight" style="background-color: lightgray;border-radius: 5px;">
+            <b>Can I negotiate the price on an old car?
+            </b>
+          </button>
+        </h2>
+        <br>
+      
+        <div id="flush-collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Yes, in India, it is common to negotiate the price of a used car. However, the extent to which the price can be negotiated depends on various factors such as the condition of the car, the demand in the market, and the urgency of the seller to sell the car.
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+      </div>
+</section>
+<br>
+<br>
+
+<footer class="">
+  <div style="background-color: lightgray;" >
+  <div class="container footer1">
+    <div class="det">
+<h6 style="color: rgb(2, 46, 2);font-weight: 700;">POPULAR USED CARS FOR SALE</h6>
+<span style="color: gray;font-weight: 500;">Used Maruti Suzuki Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Hyundai Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Mahindra Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Toyota Cars For Sale</span>
+</div>
+
+
+<div class="det">
+<h6 style="color: rgb(2, 46, 2);font-weight: 700;">POPULAR USED CARS LOCATION</h6>
+<span style="color: gray;font-weight: 500;">Used Cars in Kerala</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Delhi</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Tamil Nadu</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Bangalore</span>
+
+
+</div>
+
+<div class="det">
+  <h6 style="color: rgb(2, 46, 2);font-weight: 700;">USED CARS BY PRICE</h6>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 1 Lakh</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 2 Lakhs</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 3 Lakhs</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 4 Lakhs</span>
+  
+  
+  </div>
+
+  <div class="det">
+    <h6 style="color: rgb(2, 46, 2);font-weight: 700;">OLX</h6>
+    <span style="color: gray;font-weight: 500;">Blog</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Help</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Sitemap</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Legal & Privacy information</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Vulnerability Disclosure Program</span>
+    </div>
+
+    <div class="det">
+      <h6 style="color: rgb(2, 46, 2);font-weight: 700;">FOLLOW US</h6>
+     <span><a href="https://www.facebook.com/olxindia/"><i class="fa-brands fa-facebook-f" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://www.instagram.com/olx_india/"><i class="fa-brands fa-instagram" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://x.com/OLX_India"><i class="fa-brands fa-twitter" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://www.youtube.com/user/OLXInTv"><i class="fa-brands fa-youtube" style="color: gray;font-size: larger;"></i></a></span>
+      </div>
+  </div>
+  </div>
+
+
+
+  <div class="container-fluid" style="background-color: #062e2e;">
+   <div class="container footer2">
+    <img src="cartrade.png">
+  <img src="olx.png" >
+  <img src="carwale.png">
+  <img src="bikewale.png">
+  <img src="cartr.png">
+  <img src="mobileoutlook.png">
+ 
+   </div>
+
+   </div>
+
+
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

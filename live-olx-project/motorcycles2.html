@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycles 2</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="motorcycles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+</head>
+<body>
+    <!---------------------------Nav Section------------------------------------->
+    <nav class=" nav shadow-md ">
+        <div class="nav container-fluid">
+            <img src="olx-logo.png" class="img">
+
+            <select  type="text "  class=" dropdown-toggle menu navh" data-bs-toggle="dropdown" aria-expanded="false">
+                India
+              
+     
+                <option> <a class="dropdown-item " href="#"> India</a></option>
+                <br>
+                <option><hr class="dropdown-divider"></option>
+                <li><h3>POPULAR LOCATIONS<h3></li>
+                <option><a class="dropdown-item" href="#">Kerala</a></option>
+                <option><a class="dropdown-item" href="#">Panjab</a></option>
+                <option><a class="dropdown-item" href="#">Tamil Nadu</a></option>
+                <option><a class="dropdown-item" href="#">Gujarat</a></option>
+                <option><a class="dropdown-item" href="#">Maharashtra</a></option>
+                <br>
+             
+            </select>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+               <input for="search " type="text" placeholder=" Find Cars, Mobile Phones and more..." class="search navh"></input>
+
+               <select class="language dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+        
+                <option><a class="dropdown-item active" href="#">English</a></option>
+                <option><a class="dropdown-item" href="#">Hindi</a></option>
+              
+               
+            </select>
+
+
+            <span><a href="#" class="login">Login</a></span>
+
+            <span><a href="#"  class="sell"> + Sell</a></span>
+        </div>
+    </nav>
+
+
+<!----------------------Menu Section---------------------------------->
+<div class=" shadow-sm menu2">
+    <div class="container menu1 ">
+        <button class="categories dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            ALL CATEGORIES
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+         <a class="dropdown-item menuh" href="#"><h6>Cars</h6></a>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Bikes</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">Motorcycles</a></li>
+            <li><a class="dropdown-item menuh" href="#">MScooters</a></li>
+            <li><a class="dropdown-item menuh" href="#">Spare Parts</a></li>
+            <li><a class="dropdown-item menuh" href="#">Bicycles</a></li>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Properties</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">For Sale: Houses & Apartments</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Rent: Houses & Apartments</a></li>
+            <li><a class="dropdown-item menuh" href="#">Lands & Plots</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Rent: Shops & Offices</a></li>
+            <li><a class="dropdown-item menuh" href="#">For Sale: Shops & Offices</a></li>
+            <li><a class="dropdown-item menuh" href="#">PG & Guest Houses</a></li>
+            <br>
+            <li><a class="dropdown-item menuh" href="#"><h6>Electronics & Appliances</h6></a></li>
+            <li><a class="dropdown-item menuh" href="#">TVs, Video - Audio</a></li>
+            <li><a class="dropdown-item menuh" href="#">Kitchen & Other Appliances</a></li>
+            <li><a class="dropdown-item menuh" href="#">Computers & Laptops</a></li>
+            <li><a class="dropdown-item menuh" href="#">Cameras & Lenses</a></li>
+            <li><a class="dropdown-item menuh" href="#">Games & Entertainment</a></li>
+            <li><a class="dropdown-item menuh" href="#">Fridges</a></li>
+            <li><a class="dropdown-item menuh" href="#">Computer Accessories</a></li>
+            <li><a class="dropdown-item menuh" href="#">Hard Disks, Printers & Monitors</a></li>
+            <li><a class="dropdown-item menuh" href="#">ACs</a></li>
+            <li><a class="dropdown-item menuh" href="#">Washing Machines</a></li>
+            </ul>
+
+            <span><a href="cars.html" class="menuu menuh">Cars</a></span>
+            <span><a href="motorcycles.html" class="menuu menuh">Motorcycles</a></span>
+            <span><a href="../Mobile Phone.html" class="menuu menuh">Mobile Phones</a></span>
+            <span><a href="../House & Apartmant.html" class="menuu menuh">For Sale: Houses & Apartments</a></span>
+            <span><a href="../olx2.html" class="menuu menuh">Scooters</a></span>
+            <span><a href="#" class="menuu menuh">Commercial & Other Vehicles</a></span>
+            <span><a href="../House & Apartmant.html" class="menuu menuh">For Rent: Houses & Apartments</a></span>
+
+</div>
+
+</div>
+
+<!--------------------------Home Section-------------------------------------->
+<br>
+<div class="homee">
+<div class="container home">
+<span style="color: rgb(154, 151, 151);">Home</span>
+
+<h1>Buy & Sell Used Bikes in India</h1>
+
+<p style="color: rgb(152, 149, 149);">Discover an extensive range of pre-owned motorcycles available on OLX. Whether you're looking for a sporty ride or a rugged off-road bike, our platform offers motorcycles that meet the needs of every rider. Explore listings from popular brands like <a href="#">Bajaj</a>, <a href="#">Royal Enfield</a>,<a href=""> Hero</a>, <a href="#">Yamaha</a> and <a href="#">Honda</a>.
+
+    We currently have more than 134165 motorcycles available across India. Whether you're a first-time rider or an enthusiast looking to upgrade, browse through our comprehensive listings and find the motorcycle that suits your style and budget.</p>
+
+
+
+  <br>
+  <h4>Popular Motorcycle Models :</h4>
+  <p>Explore the most sought-after models, including <a href="#">Hero Splendor</a>, <a href="#">Classic 350</a>, <a href="#">R15</a>, <a href="#">TVS Apache RTR</a> and <a href="#">Bajaj Pulsar 150</a>. Whether you're looking for speed, comfort, or durability, OLX has a motorcycle for you.</p>
+</div>
+</div>
+
+<section class="container section1">
+    <div class="accordion  left-part" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header ">
+            <button class="accordion-button menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+             CATEGORIES
+            </button>
+        
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>
+            --   All Categories
+            <br>
+            <br>
+          <span  class="accordion-collapse active">Motorcycles</span>
+          <br>
+          <span  class="accordion-collapse">Bikes</span>
+          <br>
+          <span  class="accordion-collapse">Scooters</span>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            LOCATIONS
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+            <ul class="accordion-body list">
+              <li class="selected">India</li>
+              <li><a href="#" class="locations">Maharashtra (45,837)</a></li>
+              <li><a href="#" class="locations">Tamil Nadu (41,341)</a></li>
+              <li><a href="#" class="locations">Kerala (39,782)</a></li>
+              <li><a href="#" class="locations">Uttar Pradesh (28,440)</a></li>
+              <li><a href="#" class="locations">Karnataka (23,555)</a></li>
+              <li><a href="#" class="locations">Gujarat (21,771)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            BRAND AND MODEL
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+            <div class="accordion-body input-group">
+               
+                <input type="text" class="form-control" placeholder=" Search brand or modal" aria-label="Username" aria-describedby="basic-addon1">
+                 <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-magnifying-glass"></i></span>
+                   <br>
+                 
+            </div>
+            <h6 style="margin-left: 20px;"><b>POPULAR BRANDS</b></h6>
+            <span  style="margin-left: 20px;">BMW</span>
+            <br>
+            <span  style="margin-left: 20px;">BSA</span>
+            <br>
+            <span  style="margin-left: 20px;">Bjaj</span>
+            <br>
+            <span  style="margin-left: 20px;">Eider</span>
+            <br>
+            <span  style="margin-left: 20px;">Hero</span>
+            <br>
+            <span  style="margin-left: 20px;">Honda</span>
+            <br>
+            <span  style="margin-left: 20px;">TVS</span>
+           <br>
+           <br>
+
+            
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button menus" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   TRANSIMISSION
+                  </button>
+              
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                   <span> Choose from below options</span>
+             <br>
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">Automatic         80,500+cars</li>
+                        <li class="list-group-item">Manual                2,60,000+cars</li>
+                
+                      </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+         
+          
+        </div>
+</div>
+        
+
+
+      
+      <!----------------cars section--------------------------------->
+      <div class="container right-part">
+      
+          134,835 ads in <strong>India</strong> 
+
+          <button class="bg-white dropdown-toggle float-end imgd" data-bs-toggle="dropdown" aria-expanded="false" style="border: 2px solid white;">
+          <b> SORT BY :</b> Date Published
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+
+            <li><a class="dropdown-item active" href="#">Date Published</a></li>
+            <li><a class="dropdown-item" href="#">Relevance</a></li>
+            <li><a class="dropdown-item" href="#">Price : Low to Heigh</a></li>
+            <li><a class="dropdown-item" href="#">Price : Heigh to Low</a></li>
+            <li><a class="dropdown-item" href="#">Distance</a></li>
+    </ul>
+    <br>
+    <br>
+  
+    <div class="card-group imgs">
+      <div class="card">
+        <img src="thunderbird.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">royal enfield Thunderbird </h5>
+          <p class="card-text">₹ 70,000
+            <br>
+            <span style="color: gray;">2015 - 25000km </span> 
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Lalpur, Ranchi
+          </small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="yamaha2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Yamaha R15</h5>
+          <p class="card-text">₹ 1,39,000
+            <br>
+            <span style="color: gray;">2021 - 14,250km</span>
+
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Jubilee Hills, Hyderabad</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="tvs.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tvs Apache Rr310</h5>
+          <p class="card-text">₹ 2,15,000
+            <br>
+            <span style="color: gray;">2021 - 9,000km</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Pottammal, Kozhikode</small>
+        </div>
+      </div>
+    
+      </div>
+<br>
+      <div class="card-group imgs">
+        <div class="card">
+          <img src="bajaj3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bjaj Pulsar N150</h5>
+            <p class="card-text">₹ 1,45,000
+              <br>
+              <span style="color: gray;">2024 - 1,214km</span> 
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Rajendra Nagar, Guntur
+            </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ninja.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kawasaki Ninja 650</h5>
+            <p class="card-text">₹ 5,88,000
+              <br>
+              <span style="color: gray;">2022 - 13,200km </span>
+  
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Shahdara, Delhi</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="honda2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Honda Cb350rs</h5>
+            <p class="card-text">₹ 1,99,999
+              <br>
+              <span style="color: gray;">2023 - 5,800km </span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Bandra West, Mumbai</small>
+          </div>
+        </div>
+      
+        </div>
+        <br>
+      <div class="card-group imgs">
+        <div class="card">
+          <img src="bajaj4.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bjaj Pulsar Ns160</h5>
+            <p class="card-text">₹ 1,40,000
+              <br>
+              <span style="color: gray;">2023 - 10,000km </span> 
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Kainshira, Sambalpur
+
+            </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="yamahamt.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Yamaha Mt 15</h5>
+            <p class="card-text">₹ 80,000
+              <br>
+              <span style="color: gray;">2024 - 16,000km </span>
+  
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Piranwadi, Belagavi</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ktmduke.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ktm 200 Duke</h5>
+            <p class="card-text">₹ 1,50,000
+              <br>
+              <span style="color: gray;">2023 - 5,000km (Manual)</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Peeplani Katra, Varanasi
+            </small>
+          </div>
+        </div>
+<br>
+        <div class="card-group imgs">
+          <div class="card">
+            <img src="tvsrider.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tvs Rider 125</h5>
+              <p class="card-text">₹ 1,02,028
+                <br>
+                <span style="color: gray;">2024 - 38,862km</span> 
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Bhist Bagh Ahilya Nagari, Ahmadnagar
+  
+              </small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="bajaj2.jpeg" class="card-img-top" alt="..." style="height: 183px;">
+            <div class="card-body">
+              <h5 class="card-title">Bjaj Dominar 400</h5>
+              <p class="card-text">₹ 1,64,000
+                <br>
+                <span style="color: gray;">2021 - 25,800km</span>
+    
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Bhist Bagh Ahilya Nagari, Ahmadnagar</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="royalclassic.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Enfield Classic 350</h5>
+              <p class="card-text">₹ 1,65,000
+                <br>
+                <span style="color: gray;">2020 - 36,474km</span>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Bhist Bagh Ahilya Nagari, Ahmadnagar</small>
+            </div>
+          </div>
+
+    
+
+
+      
+        </div>
+
+    </div>
+    <br>
+    <nav aria-label="Page navigation example justify-content-center">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="motorcycles.html">Previous</a>
+        </li>
+        <li class="page-item "><a class="page-link" href="motorcycles.html">1</a></li>
+        <li class="page-item active"><a class="page-link" href="motorcycles2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="motorcycle3.html">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="motorcycle3.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+<br>
+</div>
+</section>
+
+
+<footer class="">
+  <div class=" footer1">
+    <div class="det">
+<h6 style="color: rgb(2, 46, 2);font-weight: 700;">POPULAR USED CARS FOR SALE</h6>
+<span style="color: gray;font-weight: 500;">Used Maruti Suzuki Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Hyundai Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Mahindra Cars For Sale</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Toyota Cars For Sale</span>
+</div>
+
+
+<div class="det">
+<h6 style="color: rgb(2, 46, 2);font-weight: 700;">POPULAR USED CARS LOCATION</h6>
+<span style="color: gray;font-weight: 500;">Used Cars in Kerala</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Delhi</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Tamil Nadu</span>
+<br>
+<span style="color: gray;font-weight: 500;">Used Cars in Bangalore</span>
+
+
+</div>
+
+<div class="det">
+  <h6 style="color: rgb(2, 46, 2);font-weight: 700;">USED CARS BY PRICE</h6>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 1 Lakh</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 2 Lakhs</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 3 Lakhs</span>
+  <br>
+  <span style="color: gray;font-weight: 500;">Used Cars Below 4 Lakhs</span>
+  
+  
+  </div>
+
+  <div class="det">
+    <h6 style="color: rgb(2, 46, 2);font-weight: 700;">OLX</h6>
+    <span style="color: gray;font-weight: 500;">Blog</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Help</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Sitemap</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Legal & Privacy information</span>
+    <br>
+    <span style="color: gray;font-weight: 500;">Vulnerability Disclosure Program</span>
+    </div>
+
+    <div class="det">
+      <h6 style="color: rgb(2, 46, 2);font-weight: 700;">FOLLOW US</h6>
+     <span><a href="https://www.facebook.com/olxindia/"><i class="fa-brands fa-facebook-f" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://www.instagram.com/olx_india/"><i class="fa-brands fa-instagram" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://x.com/OLX_India"><i class="fa-brands fa-twitter" style="color: gray;font-size: larger;"></i></a></span>
+     <span><a href="https://www.youtube.com/user/OLXInTv"><i class="fa-brands fa-youtube" style="color: gray;font-size: larger;"></i></a></span>
+      </div>
+  </div>
+  </div>
+
+
+
+  <div class="container-fluid" style="background-color: #062e2e;">
+   <div class="container footer2">
+    <img src="cartrade.png">
+  <img src="olx.png" >
+  <img src="carwale.png">
+  <img src="bikewale.png">
+  <img src="cartr.png">
+  <img src="mobileoutlook.png">
+ 
+   </div>
+
+   </div>
+
+
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
